@@ -2,9 +2,7 @@ import random
 
 def quebraSenha(num):
     try:
-        senha = num
-
-        senha = list(str(senha))
+        senha = list(str(num))
 
         quebraSenha = [random.randint(0,9) for num in range(0,len(senha))]
 
@@ -20,4 +18,4 @@ def quebraSenha(num):
         print('Digite somente numeros')
 
 if __name__ == '__main__':
-    quebraSenha(1)
+    quebraSenha(1234)
