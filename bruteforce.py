@@ -3,9 +3,7 @@ import random
 def quebraSenha(num):
     try:
         senha = num
-    except Exception as e:
-        print('Digite somente numeros')
-    else:
+
         senha = list(str(senha))
 
         quebraSenha = [random.randint(0,9) for num in range(0,len(senha))]
@@ -18,6 +16,8 @@ def quebraSenha(num):
             print(quebraSenha)
         else:
             print(f'A senha digitada é {quebraSenha}\nForam {contador} tentativas')
+    except Exception as e:
+        print('Digite somente numeros')
 
 if __name__ == '__main__':
-    quebraSenha(12345)
+    quebraSenha(1)
