@@ -18,4 +18,4 @@ def quebraSenha(num):
         print('Digite somente numeros')
 
 if __name__ == '__main__':
-    quebraSenha(1234)
+    quebraSenha(123)
